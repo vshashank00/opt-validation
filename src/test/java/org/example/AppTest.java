@@ -24,7 +24,7 @@ public class AppTest {
         driver.get("https://github.com/");
         driver.findElement(By.cssSelector("div[class=\"position-relative HeaderMenu-link-wrap d-lg-inline-block\"]>a[href='/login']")).click();
         driver.findElement(By.id("login_field")).sendKeys("your email");
-        driver.findElement(By.id("password")).sendKeys("ypur password", Keys.ENTER);
+        driver.findElement(By.id("password")).sendKeys("your password", Keys.ENTER);
         Totp totp=new Totp("secret key that you will get from github setting under password and authentication and setip 2fa and also click on secret key and paste here");
         driver.findElement(By.id("app_totp")).sendKeys(totp.now(), Keys.ENTER);
         driver.quit();
