@@ -17,7 +17,6 @@ import java.security.Key;
 public class AppTest {
     @Test
     public void Otp() {
-        //Y6Y4WQA2GISMMJ7N
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
